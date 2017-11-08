@@ -17,9 +17,7 @@
 
 <body ng-app="App">
   <div class="container-fluid">
-    <div ng-include="'assets/views/header.html'"></div>
     <div class="content" ng-view></div>
-    <div ng-include="'assets/views/footer.html'"></div>
   </div>
   
   <!-- plug-ins -->
@@ -33,10 +31,11 @@
   <script src="scripts/app.js"></script>
   
   <!-- Controllers -->
-
+  <script src="scripts/controllers/homeCtrl.js"></script>
   
   <!-- Services -->
-
+  <script src="scripts/services/actorSrv.js"></script>
+  <script src="scripts/services/moviesSrv.js"></script>
   
 </body>
 
