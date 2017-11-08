@@ -1,7 +1,7 @@
 app.service('saveSrv', function($window, $http){
 		  this.setObject = function(key, value){
 			  $window.localStorage[key] = JSON.stringify(value);
-			  $http.put('movieapp/actorfile/' + key, value);
+			  $http.put('../../' + key, value);
 		  };
 		  
 		  this.getObject = function(key){
